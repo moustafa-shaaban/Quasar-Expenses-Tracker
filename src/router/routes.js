@@ -7,7 +7,7 @@ const routes = [
       {
         path: '/about',
         name: 'about',
-        component: () => import('../pages/AboutComponent.vue'),
+        component: () => import('../pages/AboutPage.vue'),
       },
       {
         path: '/add-transaction',

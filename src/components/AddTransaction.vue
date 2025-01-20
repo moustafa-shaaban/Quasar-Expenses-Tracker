@@ -98,14 +98,14 @@ function handleSubmit() {
         <q-form @submit.prevent="handleSubmit">
           <div v-if="transactionValue">
             <q-input autocomplete filled v-model="transactionName" label="Income Name" required lazy-rules
-              :rules="[val => val && val.length > 0 || 'Income Name is required']" autofocus />
+              :rules="[val => val && val.length > 0 || 'Income Name is required']" />
 
             <q-input filled v-model.number="transactionAmount" type="number" required label="Income Amount" />
           </div>
 
           <div v-else>
             <q-input autocomplete filled v-model="transactionName" label="Expense Name" required lazy-rules
-              :rules="[val => val && val.length > 0 || 'Expense Name is required']" autofocus />
+              :rules="[val => val && val.length > 0 || 'Expense Name is required']" />
 
             <q-input filled v-model.number="transactionAmount" type="number" required label="Expense Amount" />
           </div>
